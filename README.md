@@ -40,7 +40,7 @@ Antes de construir el panel ejecutivo, se procesó el conjunto de datos original
   - **Franjas de Edad (`Age Group`):** Agrupación de la edad en rangos estratégicos (_18-24 Youth_, _25-39 Young Adult_, _40-59 Adult_, y _60+ Senior_).
   - **Niveles de Gasto (`Spending Level`):** Clasificación de los importes en categorías (_Low <$40_, _Medium $40-$80_, y _High >$80_).
   - **Tipo de Cliente (`Customer Type`):** Segmentación y categorización de los perfiles de compra en tipologías específicas (_Frequent_, _Loyal Customer_ y _Occasional_) para el análisis del comportamiento de compra.
-- **Validación de Métricas Clave:** Verificación de integridad en las 3.900 transacciones para asegurar la precisión matemática en el Total de Ventas (~$233k USD) y el Ticket Medio (~$59.76 USD).
+- **Validación de Métricas Clave:** Verificación de integridad en las 3.900 transacciones para asegurar la precisión matemática en el Total de Ventas ($233k USD) y el Ticket Medio ($59.76 USD).
 
 ## 📈 5. Análisis Descriptivo de los Datos
 
