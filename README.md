@@ -99,8 +99,4 @@ Las sugerencias para mejorar este panel son bienvenidas. Si deseas proponer nuev
 ## 👤 9. Autores
 
 - **Zhaklina Dobromirova Karailieva** - [zhaklinaa](https://github.com/zhaklinaa)
-- _Proyecto de Dashboard Interactivo y Análisis de Datos (Customer Shopping Analysis)._
-
-```
-
-```
+- _Proyecto de Dashboard Interactivo y Análisis de Datos (Shopping Trends Analysis)._
