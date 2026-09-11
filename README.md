@@ -13,6 +13,7 @@ A continuación, se detalla la organización de los archivos dentro de este repo
 ├── shopping_trends_clean.xlsx    # Libro de Excel con el Dashboard interactivo y las tablas dinámicas.
 ├── imgDashboard                  # Captura de pantalla con la vista previa del dashboard.
 └── README.md                     # Documentación y conclusiones del proyecto.
+```
 
 ## 🛠 3. Instalación, Requisitos y Ejecución
 
@@ -99,4 +100,7 @@ Las sugerencias para mejorar este panel son bienvenidas. Si deseas proponer nuev
 
 - **Zhaklina Dobromirova Karailieva** - [zhaklinaa](https://github.com/zhaklinaa)
 - _Proyecto de Dashboard Interactivo y Análisis de Datos (Customer Shopping Analysis)._
+
+```
+
 ```
