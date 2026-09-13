@@ -44,22 +44,42 @@ Antes de construir el panel ejecutivo, se procesó el conjunto de datos original
 
 ## 📈 5. Análisis Descriptivo de los Datos
 
-En este apartado se evalúan las métricas cuantitativas y cualitativas del conjunto de datos para extraer el perfil general del comprador y el comportamiento comercial, justificando la importancia de cada indicador para la toma de decisiones:
+En este apartado se detalla la estructura del conjunto de datos, especificando la naturaleza de cada variable disponible en el dataset para comprender qué información alimenta el modelo antes de su análisis:
 
-- **Métricas Globales (KPIs):**
-  - **Ventas Totales (_Total Sales_ - ~$233.081,00):** Muestra el volumen total de ingresos acumulados en las 3.900 transacciones. Incluirlo establece la escala económica global del negocio y sirve como referencia principal de rendimiento.
-  - **Ticket Medio (_Average Ticket_ - ~$59,76):** Indica el gasto promedio por transacción. Es clave analizarlo para evaluar la rentabilidad por cada operación comercial y entender el comportamiento de compra individual.
-  - **Volumen de Transacciones (3.900 operaciones):** Refleja el tamaño total de la muestra analizada, garantizando que los datos del dashboard son representativos y estadísticamente fiables.
+- **Métricas Cuantitativas (Numéricas):**
+  - **Importe de la Compra (_Purchase Amount (USD)_):** Variable numérica continua que registra el valor monetario de cada transacción individual.
+  - **Edad del Cliente (_Age_):** Variable numérica discreta que indica la edad del comprador, permitiendo clasificarlo en rangos demográficos (_Age Group_).
+  - **Valoración de Reseña (_Review Rating_):** Calificación numérica otorgada por el cliente sobre su experiencia de compra.
+  - **Compras Previas (_Previous Purchases_):** Conteo numérico del historial de transacciones anteriores realizadas por el usuario.
+  - **Número de Transacciones (_Transaction Count_):** Conteo total de registros independientes que componen la muestra analizada ($3.900$ operaciones).
 
 - **Variables Categóricas y Demográficas:**
-  - **Segmentos de Edad (`Age Group`):** Muestra la concentración de ventas en las franjas de adultos (**40-59 años** con $89.741) y adultos jóvenes (**25-39 años** con $67.188). Su análisis se justifica para enfocar los esfuerzos comerciales y de marketing en el público que realmente genera mayor tracción.
-  - **Niveles de Gasto (`Spending Level`):** Revela el predominio de las compras de rango moderado (`Medium $40-$80`), que aportan más de $114.500 al total. Se justifica porque identifica la fuente principal de ingresos del negocio frente a los extremos.
-  - **Tipo de Cliente (`Customer Type`):** Divide la base entre perfiles _Frequent_, _Loyal Customer_ y _Occasional_. Se incluye para medir la recurrencia y evaluar la efectividad de las estrategias de fidelización de la base de datos.
-  - **Estacionalidad y Categorías:** Demuestra la distribución estable de las ventas a lo largo del año y posiciona a _Clothing_ y _Accessories_ como las categorías líderes del catálogo. Su objetivo es planificar mejor el inventario para tener siempre disponible lo que el cliente realmente demanda.
+  - **Género (_Gender_):** Variable categórica que clasifica al comprador.
+  - **Ubicación (_Location_):** Estado o región geográfica donde se efectúa la operación comercial.
+  - **Tipo de Cliente (_Customer Type_):** Define el nivel de fidelización o frecuencia de compra en la base de datos (ej. _Frequent_, _Loyal Customer_, _Occasional_).
+  - **Frecuencia de Compras (_Frequency of Purchases_):** Patrón temporal con el que el usuario suele realizar sus adquisiciones (ej. _Weekly_, _Fortnightly_, _Annually_).
+
+- **Variables de Producto y Características:**
+  - **Artículo Comprado e Item (_Item Purchased_ / _Category_):** Especifica el producto exacto y la categoría principal a la que pertenece (ej. _Clothing_, _Accessories_, _Footwear_, _Outerwear_).
+  - **Talla y Color (_Size_ / _Color_):** Atributos físicos específicos de la prenda adquirida.
+  - **Estación y Categoría Estacional (_Season_ / _Season Category_):** Estación del año asociada a la compra (_Cold Season_ / _Warm Season_).
+
+- **Variables de Gestión y Promoción:**
+  - **Nivel de Gasto (_Spending Level_):** Segmentación categórica derivada del importe (Alto, Moderado, Bajo).
+  - **Estado de Suscripción (_Subscription Status_):** Indica si el cliente cuenta con una suscripción activa (Sí/No).
+  - **Método de Pago y Preferido (_Payment Method_ / _Preferred Payment Method_):** Vía de transacción financiera utilizada o preferida por el cliente (Tarjetas, PayPal, Venmo, Efectivo, etc.).
+  - **Tipo de Envío (_Shipping Type_):** Modalidad logística seleccionada para la entrega (_Express_, _Free Shipping_, _Standard_, _Next Day Air_, etc.).
+  - **Descuento Aplicado y Código Promocional (_Discount Applied_ / _Promo Code Used_):** Variables booleanas o categóricas que registran el uso de rebajas o códigos en la transacción.
 
 ## 📊 6. Informe Explicativo del Análisis (Conclusiones)
 
-### 1. Interpretación y Justificación de los Gráficos del Dashboard
+### 1. Métricas Globales (KPIs)
+
+- **KPI de Ventas Totales (_Total Sales_ - $233.081,00):** Representa el volumen global de ingresos acumulados en las 3.900 transacciones del dataset, sirviendo como indicador principal para medir la escala financiera general del negocio.
+- **KPI de Ticket Medio (_Average Ticket_ - $59,76):** Mide el valor monetario promedio de cada operación individual, permitiendo evaluar la rentabilidad por transacción y el comportamiento de gasto de los clientes.
+- **KPI de Volumen de Transacciones (_Transaction Count_ - 3.900 operaciones):** Refleja la cantidad total de actos de compra registrados en la muestra, aportando el contexto del tamaño del mercado analizado para garantizar la fiabilidad del análisis.
+
+### 2. Interpretación y Justificación de los Gráficos del Dashboard
 
 - **Gráfico de Ventas por Grupo de Edad (`Sales by Age Group`):** Muestra que el núcleo principal de compradores se concentra en la franja de adultos de **40-59 años** ($89.741) y adultos jóvenes (**25-39 años** con $67.188), lo cual es vital destacar porque evidencia dónde reside el mayor retorno económico y permite enfocar con precisión los esfuerzos publicitarios sin desperdiciar presupuesto.
 - **Gráfico de Ventas por Nivel de Gasto (`Sales by Spending Level`):** Refleja un claro predominio del nivel moderado (`Medium $40-$80`) con $114.587 frente a los niveles alto y bajo, lo que se resalta para demostrar que la salud financiera del negocio depende de un consumidor constante de ticket medio y no de picos aislados.
@@ -67,7 +87,7 @@ En este apartado se evalúan las métricas cuantitativas y cualitativas del conj
 - **Gráfico de Ventas por Estación (`Sales by Season`):** Muestra un comportamiento bastante parejo con un ligero repunte en otoño (_Fall_ - $60.018) y un descenso en verano (_Summer_ - $55.777), ayudando a justificar la planificación estacional de campañas.
 - **Gráfico de Ventas por Categoría (`Sales by Category`):** Revela mediante un gráfico circular el claro liderazgo de la ropa (_Clothing_ con un **45%**) y los accesorios (_Accessories_ con un **32%**), cuyo objetivo es planificar mejor el inventario para tener siempre disponible lo que el cliente realmente demanda y optimizar la logística de stock.
 
-### 2. Estructura e Interactividad del Dashboard
+### 3. Estructura e Interactividad del Dashboard
 
 - **Organización Visual y Componentes:** El panel interactivo está diseñado de forma estructurada para ofrecer una lectura limpia y directa de los datos clave, contando con una sección superior dedicada a los KPIs globales (_Total Sales_, _Average Ticket_, _Transaction Count_) y una disposición en cuadrícula para los gráficos dinámicos.
 - **Uso de Segmentadores (_Slicers_):** Se han integrado múltiples segmentadores laterales en la parte izquierda (filtrando por _Gender_, _Customer Type_, _Category_, _Season Category_, _Payment Method_ y _Location_), dotando al dashboard de total flexibilidad para auditar y filtrar toda la información en tiempo real con un solo clic.
